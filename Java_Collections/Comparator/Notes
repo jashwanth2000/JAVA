@@ -1,0 +1,2 @@
+comparator is an functional interface, which we use to do custom order of sorting, by default Collections.sort or 
+.sort does ascceding order, we write 

@@ -1,0 +1,8 @@
+-----------------
+SortedMap is an interface which extends Map, tree is an implementation of navigable map, navigable map extends sorted map(interface)
+sorts based on keys, either by natural ordering or by spefied comparator.
+
+tree map time complexity is O(n) for inserting , getting is O(1) and for contains and all it is o(n)
+----------------------------------
+unbalanced BST tree---
+right side higher values, left side lower values

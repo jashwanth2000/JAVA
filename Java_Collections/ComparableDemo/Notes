@@ -1,0 +1,3 @@
+We used comparator since we didnt want natural order of sorting or natual order of sorting didnt existed
+
+We are using comparable to tell natual order of sorting by implementing Comaparable interface and implementing .compareTo method so that particular class will have natural order of sorting and can be called by .sort method

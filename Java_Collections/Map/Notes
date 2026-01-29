@@ -1,0 +1,5 @@
+// Map --> HashMap, LinkedHashMap, TreeMap, EnumMap
+
+Map is a key(unique) ,value pair
+Map doesnt extend collection interface
+some main insertion order some dont

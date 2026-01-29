@@ -1,0 +1,21 @@
+   // Set -->                   HashSet, LinkedHashSet, TreeSet, EnumSet
+Maintains insertion order         no        yes            no      no
+Sorted order                       no         no          yes        yes(ordinal) 
+thread safe                       no        no             no         no
+
+
+synchronisation by adding external wrapper
+Collection.synchronizedSet(any set you can pass) the resulting return set will be synchronised
+very bad use of this instead use ConcurrentSkipListSet
+
+
+//set extends collections
+//hash keys are infact set only
+
+ConcurrentSkipListSet--while iterating and when its on the last index,and you are adding one more value, it might iterate or it might not
+so better use CopyOnWriteSet
+
+
+
+Set types
+Set<>

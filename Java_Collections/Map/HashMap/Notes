@@ -1,0 +1,59 @@
+//key value pair
+//no order of insertion 
+//to iterate use .keyset method and store keys in a set of same type
+not thread safe
+only one null key
+0(n) -> for putting, and getting
+ 0(n) -> map.containsKey 
+
+ Interal-structure of hash map Key-value-bucket- hash function
+  
+inside there is array, the key is taken and sent to hash function
+and returns fixed size string of bytes, a numerical value, the output is known as
+hash code, hash value, or simply hash
+
+same input will produce same output
+
+----How data is stored-----
+1) hashing the key 
+2) index is found int index= hashCode&arraySize;
+3) key and value is stored in the array index
+----How data is retrived-----
+1) hashing the key 
+2) index is found int index= hashCode&arraySize;
+3) once the correct bucket is found it checks for the key in that bucket, if its finds, it returns
+4) .equals method is used to check the key, if key is string
+
+ inputs ---> hash function---> one output called as collition this is stored in linked list (size 8) / after java 8 balanced binary search tress aka RB tree 
+when linkedList size becomes 8 it will converted to RB tree
+
+ rehashing 
+ default size is 16 and load factor is 0.75 
+ 16*0.75= 12 when the size becomes 12 the size will double
+ then rehasing happens, recalculated
+
+
+ //Custom class
+ every class extends object 
+ so whenever Student student = new Student();
+ this memory address is hashed whenever obj is created
+
+HashMap
+ time Complexity
+ put, get,remove,contains key best o(1) worst o(logn)
+ contains value best o(n) worst o(n)
+ size best and worst o(1)
+ 
+ --------------------LinkedHashMap-----------------
+
+ insertion order will be maintained if accessorder is false . if true it works in the form of LRU where least used is sent to the top works by doubly linked list
+
+ --------------------Garbage Collection-----------------
+ object reference is not present for the object in the heap memory
+ JVM will see if the object has any reference if its not present JVM will destroy automatically
+ 
+ Phone phone = new Phone()---> Strong reference we are creating
+System.gc();
+-----------WeakReference
+WeakReference<Phone> phoneweakref = new WeakReference(new Phone("Apple","10 pro"));
+WeakReference for anything will be removed except for String as string is stored in string pool and will precistant throughout the lifecycle of the application

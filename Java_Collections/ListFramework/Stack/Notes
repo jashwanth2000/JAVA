@@ -1,0 +1,5 @@
+1) stack extends Vector
+2) LIFO principle(last in first out) eg:- stack of books
+3) indexing starts from 1 from the top(latest added)
+4) Better to use ArrayDeque than stack because of better memory managment
+5) Synchronous, thread safe and cause overhead

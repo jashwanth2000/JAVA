@@ -1,0 +1,2 @@
+1) Synchornous(locking and unlocking), thread safe, legacy class;
+2) array dynamic resizes;
